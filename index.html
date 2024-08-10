@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home Page</title>
+        <link rel="preload" href="assets/font/poppins-v21-latin-regular.woff2" fetchpriority="highest" as="font" crossorigin="">
+        <link rel="preload" href="assets/font/poppins-v21-latin-500.woff2" fetchpriority="highest" as="font" crossorigin="">
+        <link rel="preload" href="assets/font/poppins-v21-latin-600.woff2" fetchpriority="highest" as="font" crossorigin="">
+        <style>
+            @font-face {
+            font-display: swap;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            src: url('assets/font/poppins-v21-latin-regular.woff2') format('woff2');
+            }
+            @font-face {
+            font-display: swap;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            src: url('assets/font/poppins-v21-latin-500.woff2') format('woff2');
+            }
+            @font-face {
+            font-display: swap;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            src: url('assets/font/poppins-v21-latin-600.woff2') format('woff2');
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="top-bar">
+                    <div class="header-btn">
+                        <a href="#" class="btn">Find more lounges</a>
+                    </div>
+                    <div class="site-logo">
+                        <a href="index.html">
+                            Airport Lounge
+                        </a>
+                    </div>
+                    <ul class="top-bar-links-flex">
+                        <li>
+                            <a href="index.html">Accessibility</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Ticket</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Help</a>
+                        </li>
+                    </ul>
+                    <div class="btn-grps">
+                        <div class="toggle-slide-btn" onclick="toggleButtons()">
+                            <svg fill="#000" width="16" height="16" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="mob-search-btn">
+                            <span class="search-icon-flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M7.333 12.667A5.333 5.333 0 1 0 7.333 2a5.333 5.333 0 0 0 0 10.667ZM14 14l-2.9-2.9" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <nav>
+                        <ul>
+                            <li class="dropdown">
+                                <a href="#" class="link-active">Join</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 448 512">
+                                    <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+                                </svg>
+                                <ul>
+                                    <li>
+                                        <a href="#">Artist</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Budget</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Guide</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Instagram</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 448 512">
+                                            <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+                                        </svg>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Instagram</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Instagram</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Instagram</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Instagram</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Activate Your Account</a></li>
+                            <li>
+                                <a href="index.html">Member Benifits</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">For Bussiness</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 448 512">
+                                    <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+                                </svg>
+                                <ul>
+                                    <li>
+                                        <a href="#">Artist</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Budget</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Instagram</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 448 512">
+                                            <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+                                        </svg>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Instagram</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Instagram</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="index.html">Our Lounges</a>
+                            </li>
+                            <li>
+                                <a href="index.html">Help</a>
+                            </li>
+                            <li>
+                                <a href="index.html">Download App</a>
+                            </li>
+                            <div class="cancel-btn" onclick="toggleButtons()">
+                                <svg fill="#000" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 384 512">
+                                    <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </ul>
+                    </nav>
+                    <div class="search-form">
+                        <form>
+                            <input type="text" name="search" placeholder="type your keyword here">
+                            <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15" fill="#fff"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="hero-sec">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-title">1,500+ Airport<br>Lounges & Experiences</div>
+                    <div class="heading">More Places to relax, work and stay connected</div>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+                <div class="why-choose">
+                    <div class="grid-service">
+                        <div class="grid-bx">
+                            <div class="titles">
+                                <div class="secTitle">Why Choose Us ?</div>
+                                <div class="secHeading">Turn your amazing <span>ideas into reality</span></div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="13" height="13" fill="#827127">
+                                        <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                                    </svg>
+                                    Machine learning enable project.
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="13" height="13" fill="#827127">
+                                        <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                                    </svg>
+                                    Machine learning enable project.
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="13" height="13" fill="#827127">
+                                        <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                                    </svg>
+                                    Machine learning enable project.
+                                </li>
+                            </ul>
+                            <a href="#" class="btn">View all services</a>
+                        </div>
+                        <div class="grid-bx-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="40" height="40" fill="#827127">
+                                <path d="M512 256c0 .9 0 1.8 0 2.7c-.4 36.5-33.6 61.3-70.1 61.3H344c-26.5 0-48 21.5-48 48c0 3.4 .4 6.7 1 9.9c2.1 10.2 6.5 20 10.8 29.9c6.1 13.8 12.1 27.5 12.1 42c0 31.8-21.6 60.7-53.4 62c-3.5 .1-7 .2-10.6 .2C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-96a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 96a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/>
+                            </svg>
+                            <div class="box-title">Desing and Creative</div>
+                            <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod.</p>
+                            <a href="#" class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width=
+                                "15" height="15"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+                        </div>
+                        <div class="grid-bx-2 self-end">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="40" height="40" fill="#827127">
+                                <path d="M512 256c0 .9 0 1.8 0 2.7c-.4 36.5-33.6 61.3-70.1 61.3H344c-26.5 0-48 21.5-48 48c0 3.4 .4 6.7 1 9.9c2.1 10.2 6.5 20 10.8 29.9c6.1 13.8 12.1 27.5 12.1 42c0 31.8-21.6 60.7-53.4 62c-3.5 .1-7 .2-10.6 .2C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-96a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 96a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/>
+                            </svg>
+                            <div class="box-title">Desing and Creative</div>
+                            <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod.</p>
+                            <a href="#" class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width=
+                                "15" height="15"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+                        </div>
+                        <div class="grid-bx-3 self-end">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="40" height="40" fill="#827127">
+                                <path d="M512 256c0 .9 0 1.8 0 2.7c-.4 36.5-33.6 61.3-70.1 61.3H344c-26.5 0-48 21.5-48 48c0 3.4 .4 6.7 1 9.9c2.1 10.2 6.5 20 10.8 29.9c6.1 13.8 12.1 27.5 12.1 42c0 31.8-21.6 60.7-53.4 62c-3.5 .1-7 .2-10.6 .2C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-96a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 96a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/>
+                            </svg>
+                            <div class="box-title">Desing and Creative</div>
+                            <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod.</p>
+                            <a href="#" class="icon-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width=
+                                "15" height="15"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container lounges-bg mt-sec">
+            <div class="book">
+                <div class="book-title">PRE-BOOK YOUR LOUNGE NOW</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+        </div>
+        <div class="container mt-sec">
+            <div class="secHeading text-center mb-title">Our Blogs</div>
+            <div class="row row-gap">
+                <div class="col-lg-4 col-md-6">
+                    <div class="post-card">
+                        <div class="card-holder">
+                            <a href="#">
+                                <img src="https://angular.envytheme.com/blin/assets/images/blogs/blog3.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <a href="#" class="catg">Gaming</a>
+                            <a href="#" class="ellipsis card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</a>
+                            <div class="details">
+                                <span>14 Feb, 2024 </span> /
+                                <span>By <a href="#">Anna Rose</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="post-card">
+                        <div class="card-holder">
+                            <a href="#">
+                                <img src="https://angular.envytheme.com/blin/assets/images/blogs/blog3.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <a href="#" class="catg">Gaming</a>
+                            <a href="#" class="ellipsis card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</a>
+                            <div class="details">
+                                <span>14 Feb, 2024 </span> /
+                                <span>By <a href="#">Anna Rose</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="post-card">
+                        <div class="card-holder">
+                            <a href="#">
+                                <img src="https://angular.envytheme.com/blin/assets/images/blogs/blog3.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <a href="#" class="catg">Gaming</a>
+                            <a href="#" class="ellipsis card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</a>
+                            <div class="details">
+                                <span>14 Feb, 2024 </span> /
+                                <span>By <a href="#">Anna Rose</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="post-card">
+                        <div class="card-holder">
+                            <a href="#">
+                                <img src="https://angular.envytheme.com/blin/assets/images/blogs/blog3.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <a href="#" class="catg">Gaming</a>
+                            <a href="#" class="ellipsis card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</a>
+                            <div class="details">
+                                <span>14 Feb, 2024 </span> /
+                                <span>By <a href="#">Anna Rose</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="post-card">
+                        <div class="card-holder">
+                            <a href="#">
+                                <img src="https://angular.envytheme.com/blin/assets/images/blogs/blog3.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <a href="#" class="catg">Gaming</a>
+                            <a href="#" class="ellipsis card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</a>
+                            <div class="details">
+                                <span>14 Feb, 2024 </span> /
+                                <span>By <a href="#">Anna Rose</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="post-card">
+                        <div class="card-holder">
+                            <a href="#">
+                                <img src="https://angular.envytheme.com/blin/assets/images/blogs/blog3.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <a href="#" class="catg">Gaming</a>
+                            <a href="#" class="ellipsis card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</a>
+                            <div class="details">
+                                <span>14 Feb, 2024 </span> /
+                                <span>By <a href="#">Anna Rose</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-sec">
+            <div class="row row-gap align-items-center">
+                <div class="col-lg-4 order-md">
+                    <div class="cta">
+                        <div class="titles text-center">
+                            <div class="secTitle">Free Quote</div>
+                            <div class="secHeading">Get a Quote</div>
+                        </div>
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-6">
+                                    <input type="text" placeholder="Name" name="fname" required="">
+                                </div>
+                                <div class="col-lg-12 col-md-6">
+                                    <input type="email" placeholder="Email Address" name="Email Address" required="">
+                                </div>
+                                <div class="col-lg-12">
+                                    <input type="text" placeholder="Subject" name="subjects" required="">
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea type="text" name="" id="" cols="10" rows="3" placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="submit" class="btn">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="faqs">
+                        <div class="secHeading">Frequently Asked Questions</div>
+                        <details open>
+                            <summary>How do I submit a question on your platform ?</summary>
+                            <div class="content">
+                                <p>To submit a question, use our intuitive interface. Provide details about your query, and our system guides you effortlessly through the process, ensuring a smooth experience from start to finish. Our platform is designed to make it easy for you to get the answers you need, when you need them.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>How do I submit a question on your platform ?</summary>
+                            <div class="content">
+                                <p>To submit a question, use our intuitive interface. Provide details about your query, and our system guides you effortlessly through the process, ensuring a smooth experience from start to finish. Our platform is designed to make it easy for you to get the answers you need, when you need them.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>How do I submit a question on your platform ?</summary>
+                            <div class="content">
+                                <p>To submit a question, use our intuitive interface. Provide details about your query, and our system guides you effortlessly through the process, ensuring a smooth experience from start to finish. Our platform is designed to make it easy for you to get the answers you need, when you need them.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>How do I submit a question on your platform ?</summary>
+                            <div class="content">
+                                <p>To submit a question, use our intuitive interface. Provide details about your query, and our system guides you effortlessly through the process, ensuring a smooth experience from start to finish. Our platform is designed to make it easy for you to get the answers you need, when you need them.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>How do I submit a question on your platform ?</summary>
+                            <div class="content">
+                                <p>To submit a question, use our intuitive interface. Provide details about your query, and our system guides you effortlessly through the process, ensuring a smooth experience from start to finish. Our platform is designed to make it easy for you to get the answers you need, when you need them.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>How do I submit a question on your platform ?</summary>
+                            <div class="content">
+                                <p>To submit a question, use our intuitive interface. Provide details about your query, and our system guides you effortlessly through the process, ensuring a smooth experience from start to finish. Our platform is designed to make it easy for you to get the answers you need, when you need them.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-sec">
+            <div class="container">
+                <div class="row row-gap justify-content-between">
+                    <div class="col-lg-7">
+                        <div class="row row-gap">
+                            <div class="col-md-4">
+                                <div class="f-list-title">Health Assessment</div>
+                                <ul>
+                                    <li><a href="#">Our Research</a></li>
+                                    <li><a href="#">Our Research</a></li>
+                                    <li><a href="#">Our Research</a></li>
+                                    <li><a href="#">Our Research</a></li>
+                                    <li><a href="#">Our Research</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="f-list-title">Who We Are</div>
+                                <ul>
+                                    <li><a href="#">Our Research</a></li>
+                                    <li><a href="#">Our Research</a></li>
+                                    <li><a href="#">Our Research</a></li>
+                                    <li><a href="#">Our Research</a></li>
+                                    <li><a href="#">Our Research</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="f-list-title">Follow us</div>
+                                <ul>
+                                    <li><a href="#">Our Research</a></li>
+                                    <li><a href="#">Our Research</a></li>
+                                    <li><a href="#">Our Research</a></li>
+                                    <li><a href="#">Our Research</a></li>
+                                    <li><a href="#">Our Research</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mail-bx">
+                            <div class="mail-title">Get $10 off the hermone & fertility test !</div>
+                            <div class="search-bx">
+                                <span>Sign up to our newsletter</span>
+                                <form>
+                                    <input type="text" name="signup" placeholder="your@email.com">
+                                    <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15" fill="#fff"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-strip">
+                    <div class="social-bars">
+                        <ul>
+                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
+                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
+                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
+                            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
+                        </ul>
+                    </div>
+                    <p>© 2024 All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

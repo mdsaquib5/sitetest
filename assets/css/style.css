@@ -1,0 +1,108 @@
+* {
+	font-family: 'Poppins';
+}
+
+:root {
+	--black: #000;
+	--white: #fff;
+	--primary: #827127;
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary);
+}
+
+p {
+	line-height: 1.7;
+	color: #000000b3;
+}
+
+h1,
+.h1 {
+	font-size: clamp(1.563rem, 1.625rem + 0.9615vw, 2.5rem);
+}
+
+h2,
+.h2 {
+	font-size: clamp(1.375rem, 1.3846rem + 0.9615vw, 2.25rem);
+}
+
+h3,
+.h3 {
+	font-size: clamp(1.38rem, 1.1346rem + 0.9615vw, 2.0rem);
+}
+
+h4,
+.h4 {
+	font-size: clamp(1.25rem, 1.0577rem + 0.7692vw, 1.75rem);
+}
+
+h5,
+.h5 {
+	font-size: clamp(1.125rem, 0.9808rem + 0.5769vw, 1.5rem);
+}
+
+h6,
+.h6 {
+	font-size: clamp(1.0rem, 0.8808rem + 0.4669vw, 1.25rem);
+}
+
+/*----- header css starts -------*/
+header {
+	box-shadow: rgba(0, 0, 0, 0.75) 1px 0px 9px -5px;
+	background: var(--white);
+}
+
+header nav ul li a,
+.top-bar-links-flex li a {
+	color: #000;
+	line-height: 1.2;
+}
+
+header li a:hover {
+	color: var(--primary);
+}
+
+nav ul li .link-active {
+	color: var(--primary);
+}
+
+nav ul .dropdown ul {
+	/*	background: var(--primary-color);*/
+}
+
+.toggle-slide-btn,
+.search-icon-flex {
+	background-color: rgba(0, 0, 0, 0.04);
+	border-radius: 50px;
+	box-shadow: rgba(0, 0, 0, 0.75) 1px 0px 9px -5px;
+}
+
+/*header .site-search-wrapper form input,
+.site-search-wrapper form {
+	background-color: var(--primary-color);
+}*/
+
+.header-strip-menu-flex a {
+	color: var(--black);
+}
+
+/*form input:focus:not(.content-flex form input) {
+	outline: unset;
+	border-bottom: 1px solid var(--secondry-color);
+	transition: all 0.5s ease-in-out;
+}*/
+
+}
+
+/* -------------- media query starts --------------- */
+@media screen and (max-width: 1023px) {
+	nav ul {
+		background: var(--primary);
+	}
+}
+
+@media screen and (max-width:600px) {}
+
+@media screen and (min-width:600px) and (max-width:1023px) {}
